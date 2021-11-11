@@ -1,16 +1,31 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 8a8a8a text */
+/* 0a0909 background */
+
+
+.navItem_container {
+  @apply flex flex-col justify-center w-10 relative cursor-pointer items-center;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.nav_h1 {
+  @apply text-[#D7FBE8] text-base md:text-xl duration-200;
 }
 
-* {
-  box-sizing: border-box;
+.navIcon {
+  @apply text-[#D7FBE8] h-5 md:h-7 opacity-0 absolute duration-500;
+}
+
+.inputContainer {
+  @apply flex  space-y-5 px-20 py-5 flex-col items-center;
+}
+
+.labelText {
+  @apply text-[#D7FBE8] tracking-widest;
+}
+
+.inputs {
+  @apply rounded-sm outline-none px-2 py-1 text-sm text-[#62D2A2];
 }
